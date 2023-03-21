@@ -6,6 +6,9 @@ Version 0.9.0
 * fixed a bug in file/base-name
 * fixed docstring issues in file
 * fixed a bug in namespace/call-by-name
+* took steps to make clj.base compatible with clojurescript
+  * removed clj.java namespaces from clj.base again to reduce the dependencies on JVM classes
+  * moved file namespace to clj.java, because it depends on the JVM
 
 Version 0.8.4
 -------------

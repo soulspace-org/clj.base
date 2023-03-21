@@ -1,6 +1,6 @@
 (defproject org.soulspace.clj/clj.base "0.9.0-SNAPSHOT"
   :description "The clj.base library provides functionality for Clojure with no external dependencies."
-  :url "https://github.com/lsolbach/CljBase"
+  :url "https://github.com/soulspace-org/clj.base"
   :license {:name "Eclipse Public License"
             :url  "http://www.eclipse.org/legal/epl-v10.html"}
 
