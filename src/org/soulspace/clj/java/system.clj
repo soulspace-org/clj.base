@@ -63,7 +63,7 @@
    (set-system-property "http.proxyPort" port))
   ([host port bypassed-hosts]
    (set-http-proxy host port)
-   (set-system-property "http.nonProxyHosts" (join "|" bypassed-hosts))))
+   (set-system-property "http.nonProxyHosts" (str/join "|" bypassed-hosts))))
 
 (defn set-https-proxy
   "Set an HTTPS proxy for the JVM."
@@ -78,7 +78,7 @@
    (set-system-property "ftp.proxyPort" port))
   ([host port bypassed-hosts]
    (set-https-proxy host port)
-   (set-system-property "ftp.nonProxyHosts" (join "|" bypassed-hosts))))
+   (set-system-property "ftp.nonProxyHosts" (str/join "|" bypassed-hosts))))
 
 (defn set-socks-proxy
   "Set an SOCKS proxy for the JVM."
