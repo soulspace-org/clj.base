@@ -12,7 +12,12 @@
 
 (ns org.soulspace.clj.test.functions
   (:require [clojure.test :refer :all]
-          [org.soulspace.clj.core :refer :all]))
+            [org.soulspace.clj.core :refer :all]))
+
+(def my-var 0)
+(def my-atom (atom 1))
+(def my-ref (ref 2))
+(def my-agent (agent 3))
 
 (deftest not-nil?-test
   (is (not-nil? 1))
@@ -21,11 +26,6 @@
   (is (not-nil? ""))
   (is (not-nil? []))
   (is (not (not-nil? nil))))
-
-(def my-var 0)
-(def my-atom (atom 1))
-(def my-ref (ref 2))
-(def my-agent (agent 3))
 
 (deftest atom?-test
   (is (atom? my-atom))

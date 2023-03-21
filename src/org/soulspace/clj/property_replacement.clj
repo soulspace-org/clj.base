@@ -12,9 +12,9 @@
 
 (ns org.soulspace.clj.property-replacement)
 
-;;
-;; Functions for property replacements in the form of ${property}
-;;
+;;;
+;;; Functions for property replacements in the form of ${property}
+;;;
 
 ; concatenate the tokens matched by the pattern of replace-properties
 ; if no property is found, replace with
