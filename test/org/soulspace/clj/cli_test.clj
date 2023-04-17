@@ -11,8 +11,8 @@
 ;;;;
 
 (ns org.soulspace.clj.cli-test
-  (:use [clojure.test]
-        [org.soulspace.clj.cli]))
+  (:require [clojure.test :refer :all]
+            [org.soulspace.clj.cli :refer :all]))
 
 (def opt-def1 [["--define" "-D" "Define a variable"]
                ["--help" "-h" "Display help"]
