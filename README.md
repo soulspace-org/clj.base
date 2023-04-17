@@ -18,7 +18,7 @@ Add the dependency:
 
 Copyright
 ---------
-© 2012-2021 Ludger Solbach
+© 2012-2023 Ludger Solbach
 
 License
 -------
