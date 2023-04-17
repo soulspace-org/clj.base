@@ -11,17 +11,16 @@
 ;;;;
 
 (ns org.soulspace.clj.string
+  "Functions for working with strings."
   (:require [clojure.string :as str]))
 
-;;
-;; String functions
-;;
+;;;;
+;;;; Functions for working with strings
+;;;;
 
-;(set! *warn-on-reflection* true)
-
-;;
-;; String comparison
-;;
+;;;
+;;; String comparison
+;;;
 
 (defn gt
   "Greater than string comparison."
@@ -43,26 +42,20 @@
   [^String s1 ^String s2]
   (<= (.compareTo s1 s2) 0))
 
-(defn eq
-  "Equal string comparison."
-  [s1 s2]
-  (= s1 s2))
+(comment
+  (defn eq
+    "Equal string comparison."
+    [s1 s2]
+    (= s1 s2))
 
-(defn ne
-  "Not equal string comparison."
-  [s1 s2]
-  (not= s1 s2))
+  (defn ne
+    "Not equal string comparison."
+    [s1 s2]
+    (not= s1 s2)))
 
-;;
-;; String transformation
-;;
-
-(defn substring
-  "Returns a substring of string defined by the indices."
-  ([begin-idx ^String s]
-   (.substring s begin-idx))
-  ([begin-idx end-idx ^String s]
-   (.substring s begin-idx end-idx)))
+;;;
+;;; String transformation
+;;;
 
 (defn upper-case?
   "Returns true if the char is upper case."
@@ -73,6 +66,13 @@
   "Returns true if the char is lower case."
   [^Character c]
   (Character/isLowerCase c))
+
+(defn substring
+  "Returns a substring of string defined by the indices."
+  ([begin-idx ^String s]
+   (.substring s begin-idx))
+  ([begin-idx end-idx ^String s]
+   (.substring s begin-idx end-idx)))
 
 (defn first-upper-case
   "Returns the string with the first letter converted to upper case."
@@ -173,3 +173,4 @@
   [^String s]
   (if (re-find #"^-?\d+\.?\d*([Ee]\+\d+|[Ee]-\d+|[Ee]\d+)?$" (.trim s))
     (read-string s)))
+

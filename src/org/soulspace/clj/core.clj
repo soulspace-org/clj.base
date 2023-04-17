@@ -10,7 +10,8 @@
 ;;;;   You must not remove this notice, or any other, from this software.
 ;;;;
 
-(ns org.soulspace.clj.core)
+(ns org.soulspace.clj.core
+  "Functions to supplement clojure.core.")
 
 ;;
 ;; Functions to supplement clojure.core

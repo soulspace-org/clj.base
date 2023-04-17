@@ -60,15 +60,17 @@
   [filename]
   (str/replace filename \_ \-))
 
-(defn ns-to-file
-  "Converts a namespace into a fileneame."
-  [nsp]
-  (str/replace (str/replace nsp \- \_) \. \/))
+(comment
+  (defn ns-to-file
+    "Converts a namespace into a fileneame."
+    [nsp]
+    (str/replace (str/replace nsp \- \_) \. \/))
 
-(defn file-to-ns
-  "Converts a filename into a namespace."
-  [filename]
-  (str/replace (str/replace filename \_ \-) \/ \.))
+  (defn file-to-ns
+    "Converts a filename into a namespace."
+    [filename]
+    (str/replace (str/replace filename \_ \-) \/ \.))
+  )
 
 (defn symbol-name
   "Converts s to hyphened clojure symbol name."

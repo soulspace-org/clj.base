@@ -10,7 +10,7 @@
 ;;;;   You must not remove this notice, or any other, from this software.
 ;;;;
 
-(ns org.soulspace.clj.test.functions
+(ns org.soulspace.clj.core-test
   (:require [clojure.test :refer :all]
             [org.soulspace.clj.core :refer :all]))
 

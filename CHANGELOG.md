@@ -1,6 +1,10 @@
 ChangeLog
 =========
 
+Version 0.9.1
+-------------
+* moved file.clj to clj.java as it uses Java IO
+
 Version 0.9.0
 -------------
 * fixed a bug in file/base-name

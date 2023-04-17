@@ -10,7 +10,7 @@
 ;;;;   You must not remove this notice, or any other, from this software.
 ;;;;
 
-(ns org.soulspace.clj.test.cli
+(ns org.soulspace.clj.cli-test
   (:use [clojure.test]
         [org.soulspace.clj.cli]))
 

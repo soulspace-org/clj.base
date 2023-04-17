@@ -10,7 +10,7 @@
 ;;;;   You must not remove this notice, or any other, from this software.
 ;;;;
 
-(ns org.soulspace.clj.test.string
+(ns org.soulspace.clj.string-test
   (:require [clojure.test :refer :all]
             [org.soulspace.clj.string :refer :all]))
 
@@ -45,20 +45,6 @@
   (is (true? (le "aa" "aa")))
   (is (true? (le "a" "b")))
   (is (true? (le "aa" "ab"))))
-
-(deftest eq-test
-  (is (true? (eq "" "")))
-  (is (true? (eq "aa" "aa")))
-  (is (false? (eq "aa" "ab")))
-  (is (false? (eq "ab" "aa")))
-  (is (false? (eq "aA" "aa"))))
-
-(deftest ne-test
-  (is (false? (ne "" "")))
-  (is (false? (ne "aa" "aa")))
-  (is (true? (ne "aa" "ab")))
-  (is (true? (ne "ab" "aa")))
-  (is (true? (ne "aA" "aa"))))
 
 (deftest substring-test
   (is (= (substring 0 1 "clojure") "c"))
