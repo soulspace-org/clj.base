@@ -4,6 +4,9 @@ ChangeLog
 Version 0.9.1
 -------------
 * moved file.clj to clj.java as it uses Java IO
+* refactored 'namespace' namespace
+* moved and renamed tests
+* added tests for 'namespace' and 'property-replacement' namespaces
 
 Version 0.9.0
 -------------

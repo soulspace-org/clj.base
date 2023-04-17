@@ -6,7 +6,7 @@ org.soulspace.clj contains the following namespaces:
 * cli - functions to define and parse command line options
 * core - general functions to supplement clojure.core
 * namespace - functions to help working with namespaces
-* property-replacement - functions for property replacements in the form of ${property}
+* property-replacement - functions for replacing properties in the form of ${property}
 * string - functions to supplement clojure.string
 
 Usage
@@ -14,6 +14,7 @@ Usage
 Add the dependency: 
 
 [![Clojars Project](https://img.shields.io/clojars/v/org.soulspace.clj/clj.base.svg)](https://clojars.org/org.soulspace.clj/clj.base)
+[![cljdoc badge](https://cljdoc.org/badge/org.soulspace.clj/clj.base)](https://cljdoc.org/d/org.soulspace.clj/clj.base)
 
 Copyright
 ---------
