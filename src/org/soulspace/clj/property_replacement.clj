@@ -10,13 +10,14 @@
 ;;;;   You must not remove this notice, or any other, from this software.
 ;;;;
 
-(ns org.soulspace.clj.property-replacement)
+(ns org.soulspace.clj.property-replacement
+  "Functions for replacements of properties in the form of ${property}.")
 
 ;;;
-;;; Functions for property replacements in the form of ${property}
+;;; Functions for replacements of properties in the form of ${property}
 ;;;
 
-; concatenate the tokens matched by the pattern of replace-properties
+; Concatenates the tokens matched by the pattern of replace-properties
 ; if no property is found, replace with
 (defn- concat-property-tokens
   [prop-map [_ t1 t2 t3]]
@@ -32,7 +33,7 @@
        input)
      (coll? input)
      (map (partial replace-properties prop-map) input)
-     :default
+     :else
      input))
   ([prop-map input default]
    (if-not (nil? input)
@@ -51,7 +52,7 @@
            in)))
      (coll? input)
      (map (partial replace-properties-recursive prop-map) input)
-     :default
+     :else
      input))
   ([prop-map input default]
    (if-not (nil? input)

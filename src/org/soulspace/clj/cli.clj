@@ -11,6 +11,7 @@
 ;;;;
 
 (ns org.soulspace.clj.cli
+  "Functions to define and parse command line options."
   (:require [clojure.string :as str]))
 
 ;;
@@ -28,6 +29,10 @@
      :parse-fn identity
      :multi false
      :default nil}))
+
+;;
+;; Predicates
+;;
 
 (defn flag-spec?
   "Tests if the string is a flag, which starts with the string '--[no-]'."
@@ -50,6 +55,10 @@
   (if (long-option? arg)
     (and (not (nil? (:long spec))) (str/starts-with? arg (:long spec)))
     (and (not (nil? (:short spec))) (str/starts-with? arg (:short spec)))))
+
+;;;
+;;; Option specs and parsing
+;;;
 
 (defn option-name
   "Returns the name of the option."

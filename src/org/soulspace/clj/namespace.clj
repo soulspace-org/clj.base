@@ -11,13 +11,13 @@
 ;;;;
 
 (ns org.soulspace.clj.namespace
+  "Functions to help working with namespaces."
   (:require [clojure.string :as str]
-            [org.soulspace.clj.file :as file]
             [org.soulspace.clj.string :as sstr]))
 
-;;
-;; Functions to help working with namespaces
-;;
+;;;;
+;;;; Functions to help working with namespaces
+;;;;
 
 ;;
 ;; Strip namespace from namespace qualified keywords 
